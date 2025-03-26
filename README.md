@@ -1,4 +1,15 @@
 # 007-TSP-Gym
-Reworked environment backend, switch to Gymnasium
+Reworked environment backend, switch to Gymnasium module.
 
-Definition of Traveling Salesman Problem: Given a set of nodes, find the shortest path that visit all but one node once, and said path must return to the starting node. With $\mathcal{L}(\pi)$ depicting the length $\mathcal{L}$ of a given tour $\pi$
+Definition of Traveling Salesman Problem: Given a set of nodes, find the shortest path that visit all but one node once, and said path must return to the starting node. 
+
+| index  | latitude | longtitude | 
+| ------------- | ------------- | ------------- |
+| 0  | 0.9753  | 0.8564 |
+| 1  | 0.5432  | 0.7935 |
+| ...  | ...  | ... |
+| ...  | ...  | ... |
+| 8  | 0.4254  | 0.9723 |
+| 9  | 0.1245  | 0.4752 |
+
+With $\mathcal{L}(\pi)$ depicting the length $\mathcal{L}$ of a given path $\pi$. The exact nature of $\mathcal{L}$ in this particular application is a number, and of $\pi$ is a list of indices, e.g [0, 5, 6, ..., 9, 0]
