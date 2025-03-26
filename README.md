@@ -19,4 +19,4 @@ $$\mathcal{L}(\pi) = \sum_{i = 0}^{N-1} \mathcal{d}(\pi_{i},\pi_{i+1})$$
 $\mathcal{d}$ is the function to calculate distance between 2 nodes, in this application, two provided functions are Euclidean and Haversine.
 
 The implemented algorithms are built upon the principles of Reinforcement Learning. The Markov Decision Process (MDP) of the problem is as follow:
-- State *s* depicting the node in which an agent finds itself in a any time step; $s \in \mathcal{S}$, $|\mathcal{S}|=N$, with $\mathcal{S}$ called state space.
+- State *s* depicting the node in which an agent finds itself in a any time step; $s \in \mathcal{S}$, $|\mathcal{S}|=N$, with $\mathcal{S}$ called state space. $s_{i}$ can also be understood interchangeably with $\pi_{i}$.
