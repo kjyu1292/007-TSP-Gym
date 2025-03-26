@@ -16,4 +16,4 @@ With $\mathcal{L}(\pi)$ depicting the length $\mathcal{L}$ of a given path $\pi$
 
 $$\mathcal{L}(\pi) = \sum_{i = 0}^{N-1} \mathcal{d}(\pi_{i},\pi_{i+1})$$
 
-$\mathcal{d} is the function to calculate distance between 2 nodes, in this application, two provided functions are Euclidean and Haversine$
+$\mathcal{d}$ is the function to calculate distance between 2 nodes, in this application, two provided functions are Euclidean and Haversine.
