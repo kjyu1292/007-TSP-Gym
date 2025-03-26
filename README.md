@@ -12,5 +12,6 @@ Definition of Traveling Salesman Problem: Given a set of nodes, find the shortes
 | 8  | 0.4254  | 0.9723 |
 | 9  | 0.1245  | 0.4752 |
 
-With $\mathcal{L}(\pi)$ depicting the length $\mathcal{L}$ of a given path $\pi$. The exact nature of $\mathcal{L}$ in this particular application is a number, and of $\pi$ is a list of indices, e.g [**0**, 5, 6, ..., 9, **0**]. The first variable we can see here is $\pi$, and we have to find 1 that yields close-to-optimal within its number of permutations of $\frac{(N-1)!}{2}$, with N is the number of nodes of an instance of TSP that one would like to solve. Mathematically:
-$$ \mathcal{L}(\pi) = \sum_{i = 0}^{N-1} \mathcal{d}(pi_{i},pi_{i+1}) $$
+With $\mathcal{L}(\pi)$ depicting the length $\mathcal{L}$ of a given path $\pi$. The exact nature of $\mathcal{L}$ in this particular application is a number, and of $\pi$ is a list of indices, e.g [**0**, 5, 6, ..., 9, **0**]. The first variable we can see here is $\pi$, and we have to find 1 that yields close-to-optimal within its number of permutations of $\frac{(N-1)!}{2}$, with N is the number of nodes of an instance of TSP that one would like to solve. Mathematically: \
+
+$$\mathcal{L}(\pi) = \sum_{i = 0}^{N-1} \mathcal{d}(pi_{i},pi_{i+1})$$
