@@ -19,4 +19,8 @@ $$\mathcal{L}(\pi) = \sum_{i = 0}^{N-1} \mathcal{d}(\pi_{i},\pi_{i+1})$$
 $\mathcal{d}$ is the function to calculate distance between 2 nodes, in this application, two provided functions are Euclidean and Haversine.
 
 The implemented algorithms are built upon the principles of Reinforcement Learning. The Markov Decision Process (MDP) of the problem is as follow:
-- State *s* depicting the node in which an agent finds itself in a any time step; $s \in \mathcal{S}$, $|\mathcal{S}|=N$, with $\mathcal{S}$ called state space. $s_{i}$ can also be understood interchangeably with $\pi_{i}$.
+- State *s* depicting the node in which an agent finds itself in any time step; $s \in \mathcal{S}$, $|\mathcal{S}|=N$, with $\mathcal{S}$ called state space. $s_{i}$ can also be understood interchangeably with $\pi_{i}$.
+- Action *a* depicting the node an agent chooses to move to in any time step; $a \in \mathcal{A}$, $|\mathcal{A}|=N$, with $\mathcal{A}$ called action space. Note that the number of states and the number of actions is the same.
+- Reward *r* depicting the reward an agent receive from taking action *a* in node *s* to arrive at node *s'*. In this application, reward is the distance $\mathcal{d}$.  $r \in \mathcal{R}$, $|\mathcal{R}|=N \times N$, $\mathcal{R}$ called reward space. The reward space in the application of TSP is dense.
+- $\gamma$ is the discount factor, commonly chosen to be a float ~0.9.
+- $pi$ is policy, this one is intrisically different from the one above depicting the tour. A policy $\pi$ can be understood as the probability distribution of states, given state *s*, the probability to choose action *a* is $pi(a|s), s \in mathcal{S}, a \in mathcal{A}$.
