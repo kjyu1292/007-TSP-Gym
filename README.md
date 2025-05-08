@@ -24,3 +24,6 @@ The implemented algorithms are built upon the principles of Reinforcement Learni
 - Reward *r* depicting the reward an agent receive from taking action *a* in node *s* to arrive at node *s'*. In this application, reward is the distance $\mathcal{d}$.  $r \in \mathcal{R}$, $|\mathcal{R}|=N \times N$, $\mathcal{R}$ called reward space. The reward space in the application of TSP is dense.
 - $\gamma$ is the discount factor, commonly chosen to be a float ~0.9.
 - $\pi$ is policy, this one is intrisically different from the one above depicting the tour. A policy $\pi$ can be understood as the probability distribution of states, given state *s*, the probability of choosing action *a* is $\pi(a|s), s \in \mathcal{S}, a \in \mathcal{A}$. $\sum_{i=0}^{N} \pi(a_{i}|s) = 1$ for any $s \in \mathcal{S}$.
+
+Models implemented including Deep Q Network and its variants (Prioritized Experience Replay sampling method with Double Q), and Proximal Policy Optimization.
+DQN with Uniform sampling yields the best result. PPO could not converge.
