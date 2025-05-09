@@ -30,3 +30,4 @@ DQN with Uniform sampling yields the best result. PPO could not converge.
 
 Discounted reward function is modified. The common practice places heavy portion of its focus on the near future steps. The modified version discounted rewards of a state place on both ends with little to zero within the middle section.
 e.g. State value of s_i at time step 39 has roughly 95% of its value constituted of rewards from step 40 and the final time step.
+This modded version provide faster convergence and a more stable training.
